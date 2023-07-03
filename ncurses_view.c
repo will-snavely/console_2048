@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ncurses.h>
 #include "ncurses_view.h"
-#include "console.h"
 
 void init_ncurses_view() {
     initscr();

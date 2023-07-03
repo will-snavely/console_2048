@@ -15,7 +15,7 @@
 #include <time.h>
 #include <ncurses.h>
 
-#include "console.h"
+#include "console_model.h"
 #include "ncurses_view.h"
 #include "game.h"
 
@@ -122,12 +122,12 @@ static char* instruction_screen =
 "*                                                                             *\n"
 "*                             How to Play                                     *\n"
 "*                             -----------                                     *\n"
-"*                             W: Shift blocks up                              *\n"
-"*                             A: Shift blocks left                            *\n"
-"*                             S: Shift blocks right                           *\n"
-"*                             D: Shift blocks down                            *\n"
-"*                             P: Pause                                        *\n"
+"*                             W/Up: Shift blocks up                           *\n"
+"*                             A/Left: Shift blocks left                       *\n"
+"*                             S/Down: Shift blocks down                       *\n"
+"*                             D/Right: Shift blocks right                     *\n"
 "*                             Q: Quit                                         *\n"
+"*                                                                             *\n"
 "*                                                                             *\n"
 "*                                                                             *\n"
 "*       It's the year 2048.  The Archdemon Gazool has awoken from his         *\n"
@@ -198,8 +198,8 @@ static char *game_background =
 "|           |           |           |           |  |           |           |\n"
 "|           |           |           |           |  #-----------#-----------#\n"
 "|           |           |           |           |\n"
-"#-----------#-----------#-----------#-----------#     'WASD' To move tiles\n"
-"|           |           |           |           |     'Q' To quit\n"
+"#-----------#-----------#-----------#-----------#  WASD/Arrows to move tiles\n"
+"|           |           |           |           |  'Q' To quit\n"
 "|           |           |           |           |\n"     
 "|           |           |           |           |\n"
 "|           |           |           |           |\n"

@@ -1,7 +1,7 @@
 #ifndef _NCURSES_VIEW_H_
 #define _NCURSES_VIEW_H_
 
-#include "console.h"
+#include "console_model.h"
 
 void copy_console(console_t* other);
 

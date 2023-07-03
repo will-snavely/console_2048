@@ -7,7 +7,7 @@
        
 #include <string.h>
 #include <stdlib.h>
-#include "console.h"
+#include "console_model.h"
 
 /***** Function prototypes ******/
 

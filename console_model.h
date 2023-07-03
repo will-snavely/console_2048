@@ -6,19 +6,12 @@
  *  new characters will be placed.  When characters run past the end of 
  *  the grid, the console will scroll.
  *
- *  The console defined here should be considered seperate from the 
- *  hardware console.  I can write to a logical console without having
- *  it displayed on the screen.
- *
- *  I have taken this approach so that I can easily double buffer my console
- *  (write to a virtual console, then swap it into the "hardware" console).
- *
  *  @author Will Snavely (wsnavely)
  *  @bug None known.
  */
 
-#ifndef _CONSOLE_H_
-#define _CONSOLE_H_
+#ifndef _CONSOLE_MODEL_H_
+#define _CONSOLE_MODEL_H_
 
 #include <stdint.h>
 
